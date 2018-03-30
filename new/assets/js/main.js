@@ -356,9 +356,9 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
         $('#video-play').click(function(event) {
             event.preventDefault();
             if ($(this).hasClass('fa-play')) {
-                $('.video-player').playYTP();
+                $('.video-player').YTPPlay();
             } else {
-                $('.video-player').pauseYTP();
+                $('.video-player').YTPPause();
             }
             $(this).toggleClass('fa-play fa-pause');
             return false;

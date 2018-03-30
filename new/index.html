@@ -294,53 +294,6 @@
                   <li><a href="shop_checkout.html">Checkout</a></li>
                 </ul>
               </li>
-              <!--li.dropdown.navbar-cart-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown')-->
-              <!--        span.icon-basket-->
-              <!--        |-->
-              <!--        span.cart-item-number 2-->
-              <!--    ul.dropdown-menu.cart-list(role='menu')-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-9.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Short striped sweater-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .navbar-cart-item.clearfix-->
-              <!--                .navbar-cart-img-->
-              <!--                    a(href='#')-->
-              <!--                        img(src='assets/images/shop/product-10.jpg', alt='')-->
-              <!--                .navbar-cart-title-->
-              <!--                    a(href='#') Colored jewel rings-->
-              <!--                    |-->
-              <!--                    span.cart-amount 2 &times; $119.00-->
-              <!--                    br-->
-              <!--                    |-->
-              <!--                    strong.cart-amount $238.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                .cart-sub-totle-->
-              <!--                    strong Total: $476.00-->
-              <!--        li-->
-              <!--            .clearfix-->
-              <!--                a.btn.btn-block.btn-round.btn-font-w(type='submit') Checkout-->
-              <!--li.dropdown-->
-              <!--    a.dropdown-toggle(href='#', data-toggle='dropdown') Search-->
-              <!--    ul.dropdown-menu(role='menu')-->
-              <!--        li-->
-              <!--            .dropdown-search-->
-              <!--                form(role='form')-->
-              <!--                    input.form-control(type='text', placeholder='Search...')-->
-              <!--                    |-->
-              <!--                    button.search-btn(type='submit')-->
-              <!--                        i.fa.fa-search-->
               <li class="dropdown"><a class="dropdown-toggle" href="documentation.html" data-toggle="dropdown">Documentation</a>
                 <ul class="dropdown-menu">
                   <li><a href="documentation.html#contact">Contact Form</a></li>
@@ -355,12 +308,30 @@
           </div>
         </div>
       </nav>
-      <section class="home-section home-parallax home-fade home-full-height bg-dark-60 agency-page-header" id="home" data-background="assets/images/agency/agency_bg.jpg">
+      <section class="home-section home-full-height bg-dark-30" id="home" data-background="assets/images/section-5.jpg">
+        <div class="video-player"
+          data-property="{
+            videoURL:'http://www.youtube.com/watch?v=J_omnmUe18k',
+            containment:'.home-section',
+            startAt:0,
+            mute:false,
+            autoPlay:true,
+            loop:true,
+            opacity:1,
+            showControls:false,
+            showYTLogo:false,
+            realfullscreen:true,
+            vol:25
+          }"></div>
+        <div class="video-controls-box">
+          <div class="container">
+            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+          </div>
+        </div>
         <div class="titan-caption">
           <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1">Grow your awesome idea</div>
-            <div class="font-alt mb-40 titan-title-size-3">Make business <span class="rotate">easy | simple | flexible</span>
-            </div><a class="section-scroll btn btn-border-w btn-circle" href="#about">Learn More</a>
+            <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
+            <div class="font-alt mb-40 titan-title-size-4">We are Titan</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
           </div>
         </div>
       </section>
@@ -829,7 +800,8 @@
     <script src="assets/lib/jquery/dist/jquery.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/lib/wow/dist/wow.js"></script>
-    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <!--<script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.1.13/jquery.mb.YTPlayer.min.js"></script>
     <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
     <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
     <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
