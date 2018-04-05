@@ -1254,6 +1254,15 @@ General Styles - Owlcarousel
   transition: color 0.125s ease-in-out 0s;
 }
 
+.navbar .navbar-brand.logo {
+  padding: 5px 5px 5px 15px;
+}
+
+.navbar .navbar-brand.logo img {
+  height: 40px;
+  max-width: auto;
+}
+
 .navbar-custom .dropdown-menu {
   background: rgba(26, 26, 26, 0.9);
   border-radius: 0;
