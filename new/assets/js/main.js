@@ -86,9 +86,9 @@
         function buildHomeSection(homeSection) {
             if (homeSection.length > 0) {
                 if (homeSection.hasClass('home-full-height')) {
-                    homeSection.height($(window).height());
+                    //homeSection.height($(window).height());
                 } else {
-                    homeSection.height($(window).height() * 0.85);
+                    //homeSection.height($(window).height() * 0.85);
                 }
             }
         }
@@ -110,29 +110,6 @@
                     caption.css('opacity', (1 - topScroll/homeSection.height() * 1));
                 }
             }
-        }
-
-        /* ---------------------------------------------- /*
-         * Intro slider setup
-         /* ---------------------------------------------- */
-
-        if( $('.hero-slider').length > 0 ) {
-            $('.hero-slider').flexslider( {
-                animation: "fade",
-                animationSpeed: 1000,
-                animationLoop: true,
-                prevText: '',
-                nextText: '',
-                before: function(slider) {
-                    $('.titan-caption').fadeOut().animate({top:'-80px'},{queue:false, easing: 'swing', duration: 700});
-                    slider.slides.eq(slider.currentSlide).delay(500);
-                    slider.slides.eq(slider.animatingTo).delay(500);
-                },
-                after: function(slider) {
-                    $('.titan-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'swing', duration: 700});
-                },
-                useCSS: true
-            });
         }
 
         /* ---------------------------------------------- /*
@@ -223,17 +200,44 @@
          * Youtube video background
          /* ---------------------------------------------- */
 
+         /*
         $(function(){
             $(".video-player").mb_YTPlayer();
+        });
+        */
+
+        $('.video-player').YTPlayer({
+            fitToBackground: false,
+            videoId: '7PoHrZtG7gU',
+            pauseOnScroll: false,
+            mute: false,
+            playerVars: {
+                modestbranding: 0,
+                autoplay: false,
+                controls: 1,
+                showinfo: 0,
+                wmode: 'transparent',
+                branding: 0,
+                rel: 0,
+                autohide: 0,
+                origin: window.location.origin
+            },
+            callback: function() {
+                var player = $('.video-player').data('ytPlayer').player;
+                player.pauseVideo();
+            }
         });
 
         $('#video-play,#video-play-button').click(function(event) {
             event.preventDefault();
             $('#home-caption').hide();
+            var player = $('.video-player').data('ytPlayer').player;
             if ($('#video-play').hasClass('fa-play')) {
-                $('.video-player').YTPPlay();
+                //$('.video-player').YTPPlay();
+                player.playVideo();
             } else {
-                $('.video-player').YTPPause();
+                //$('.video-player').YTPPause();
+                player.pauseVideo();
             }
             $('#video-play').toggleClass('fa-play fa-pause');
             return false;
@@ -241,10 +245,13 @@
 
         $('#video-volume').click(function(event) {
             event.preventDefault();
+            var player = $('.video-player').data('ytPlayer').player;
             if ($(this).hasClass('fa-volume-off')) {
-                $('.video-player').YTPUnmute();
+                //$('.video-player').YTPUnmute();
+                player.unMute();
             } else {
-                $('.video-player').YTPMute();
+                //$('.video-player').YTPMute();
+                player.mute();
             }
             $(this).toggleClass('fa-volume-off fa-volume-up');
             return false;

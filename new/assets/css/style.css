@@ -1382,9 +1382,16 @@ General Styles - Owlcarousel
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
+  /* width: 100%; */
   z-index: 0;
   background-size: cover;
+  width: 100vw;
+  height: 56.25vw;
+}
+
+#home {
+  width: 100vw;
+  height: 56.25vw; /* 1920/1080 = 1.77778    100/56.25 = 1.77778 */
 }
 
 .titan-title-size-1 {
