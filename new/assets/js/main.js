@@ -213,13 +213,13 @@
             mute: false,
             playerVars: {
                 modestbranding: 0,
-                autoplay: false,
+                autoplay: 1,
                 controls: 1,
                 showinfo: 0,
                 wmode: 'transparent',
-                branding: 0,
+                branding: 1,
                 rel: 0,
-                autohide: 0,
+                autohide: 1,
                 origin: window.location.origin
             },
             callback: function() {

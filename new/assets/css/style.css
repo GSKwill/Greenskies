@@ -224,7 +224,7 @@ a,
   background: #fff;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 140px 60px 140px;
+  padding: 60px 60px 60px;
 }
 
 /* Dark background */
@@ -601,6 +601,24 @@ a,
   display: inline-block;
   color: #fff;
   margin: 0 5px 0 0;
+}
+
+#home-caption {
+  position: absolute !important;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+    /* bottom, image */
+    url(../videos/home-page-full-frame.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* Landing Page */
@@ -1115,6 +1133,7 @@ Hero Slider
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  color: #fff;
 }
 
 /*
@@ -1387,6 +1406,7 @@ General Styles - Owlcarousel
   background-size: cover;
   width: 100vw;
   height: 56.25vw;
+  margin-top: 50px;
 }
 
 #home {
@@ -2749,6 +2769,9 @@ Google map
   .navbar-right .dropdown-menu {
     right: auto;
     left: 0;
+  }
+  .home-section {
+    margin-top: 0;
   }
   /* Comments */
   .comment .comment {
