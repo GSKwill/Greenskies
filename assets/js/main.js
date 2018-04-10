@@ -211,6 +211,7 @@
             videoId: '7PoHrZtG7gU',
             pauseOnScroll: false,
             mute: false,
+            repeat: false,
             playerVars: {
                 modestbranding: 0,
                 autoplay: 1,
@@ -220,6 +221,7 @@
                 branding: 1,
                 rel: 0,
                 autohide: 1,
+                loop: 1,
                 origin: window.location.origin
             },
             callback: function() {
