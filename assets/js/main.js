@@ -293,7 +293,7 @@
                     url: formURL,
                     type: "POST",
                     data: postData,
-                    dataType: "json",
+                    //dataType: "json",
                     success: function (data) {
                         $('#contact-form-elements').hide();
                         $('#contact-form-success').show();
