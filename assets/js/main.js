@@ -226,6 +226,35 @@
             },
             callback: function() {
                 var player = $('.video-player').data('ytPlayer').player;
+                player.addEventListener('onStateChange', function(data){
+                    var action = "";
+                    switch(data.data) {
+                        case -1:
+                            action = "unstarted";
+                            break;
+                        case 0:
+                            action = "ended";
+                            break;
+                        case 1:
+                            action = "playing";
+                            break;
+                        case 2:
+                            action = "paused";
+                            break;
+                        case 3:
+                            action = "buffering";
+                            break;
+                        case 5:
+                            action = "cued";
+                            break;
+                    }
+                    ga('send', {
+                        hitType: 'event',
+                        eventCategory: 'Video',
+                        eventAction: action,
+                        eventLabel: 'Website'
+                    });
+                });
                 player.pauseVideo();
             }
         });
@@ -295,6 +324,13 @@
                     data: postData,
                     dataType: "json",
                     success: function (data) {
+                        ga('send', {
+                            hitType: 'event',
+                            eventCategory: 'Contact',
+                            eventAction: 'submitted',
+                            eventLabel: 'Website'
+                        });
+
                         $('#contact-form-elements').hide();
                         $('#contact-form-success').show();
                         $cfResponse.html(data);
