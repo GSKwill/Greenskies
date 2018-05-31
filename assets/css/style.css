@@ -1411,7 +1411,7 @@ General Styles - Owlcarousel
 
 #home {
   width: 100vw;
-  height: 56.25vw; /* 1920/1080 = 1.77778    100/56.25 = 1.77778 */
+  height: 50.25vw; /* 1920/1080 = 1.77778    100/56.25 = 1.77778 */
 }
 
 .titan-title-size-1 {
