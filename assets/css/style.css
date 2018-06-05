@@ -2971,26 +2971,9 @@ Google map
 }
 
 /* Will Added */
-a:link {
+span.linke {
     color: rgb(37, 232, 144); 
     background-color: transparent; 
     text-decoration: none;
 }
 
-a:visited {
-    color:  rgb(8, 104, 109);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(8, 104, 109);
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-a:active {
-    color:  rgb(8, 104, 109);
-    background-color: transparent;
-    text-decoration: underline;
-}
