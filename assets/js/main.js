@@ -208,7 +208,7 @@
 
         $('.video-player').YTPlayer({
             fitToBackground: false,
-            videoId: '7PoHrZtG7gU',
+            videoId: 'HNIvUEwP8Yo',
             pauseOnScroll: false,
             mute: false,
             repeat: false,
