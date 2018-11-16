@@ -34,7 +34,6 @@ iframe {
 .position-relative {
   position: relative;
 }
-
 .leftauto {
   right: 0 !important;
   left: auto !important;
@@ -2731,6 +2730,12 @@ Google map
 
 .documentation-page a:hover {
   color: #1C92C9;
+}
+
+/* --- CUSTOM CODE NUUR */
+.custom-width-modal-title {
+	width:100% important!;
+	text-align:left important!;
 }
 
 /*--------------------------------------------------------------
