@@ -925,7 +925,7 @@ blockquote {
 .module-title {
   position: relative;
   letter-spacing: 4px;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
   font-size: 30px;
   color: #111;
