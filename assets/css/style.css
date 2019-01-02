@@ -149,6 +149,9 @@ a,
 }
 
 /* Sections */
+.padding-top-20 {
+	padding-top:20px;
+	}
 .navbar-custom + .main {
   margin-top: 50px;
 }
