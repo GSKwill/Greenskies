@@ -874,7 +874,7 @@ a,
 	Typography
 --------------------------------------------------------------*/
 a {
-  color: #111;
+  color: #48ca05;
 }
 
 a:hover, a:focus {
@@ -2739,6 +2739,9 @@ Google map
 .custom-width-modal-title {
 	width:100% important!;
 	text-align:left important!;
+}
+.list-style-none {
+	list-style-type:none;
 }
 
 /*--------------------------------------------------------------
