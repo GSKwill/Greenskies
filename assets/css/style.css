@@ -215,11 +215,12 @@ a,
 
 /* Half-image */
 .side-image {
-  position: absolute;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+    position: absolute;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 40px;
 }
 
 .side-image-text {
@@ -2743,6 +2744,21 @@ Google map
 .list-style-none {
 	list-style-type:none;
 }
+.myTable { 
+  width: 100%;
+  text-align: left;
+  background-color: #eafdeb;
+  border-collapse: collapse; 
+  }
+.myTable th { 
+  background-color: #72b771;
+  color: white; 
+  }
+.myTable td, 
+.myTable th { 
+  padding: 10px;
+  border: 1px solid #72b771; 
+  }
 
 /*--------------------------------------------------------------
 	Responsive Styles - Media Queries
